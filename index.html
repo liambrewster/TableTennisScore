@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Table Tennis Score Card</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="container">
+            <!-- Header Image -->
+            <section class="img">
+                <img src="https://images.unsplash.com/photo-1611251126118-b1d4f99600a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="Table Tennis">
+            </section>
+
+            <!-- Header  -->
+            <section class="header">
+                <h1>Table Tennis Score Keeper</h1>
+            </section>
+
+            <!-- score data  -->
+            <section class="score">
+                <p class="scoreTally">
+                    <span class="p1score">0</span> to <span class="p2score">0</span>
+                </p>
+
+                <p>use the buttons below to keep score</p>
+                <div>
+                    <label for="playUntil">Playing upto:</label>
+                    <select id="playUntil">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </div>
+            </section>
+
+
+            <!-- Three button to control game -->
+            <section class="buttons">
+                <button id="p1btn">+1 Player One</button>
+                <button id="p2btn">+1 Player Two</button>
+                <button id="resetbtn">Reset</button>
+            </section>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>

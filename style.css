@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    min-height: 60vh;
+    width: 40%;
+    background: linear-gradient(to right bottom,#004225, #047e49);
+    border-radius: 3rem;
+    z-index: 3;
+    backdrop-filter: blur(1.5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    border-radius: 3rem 3rem 0rem 0rem;
+}
+.header,.score, .buttons {
+    text-align: center;
+    margin-top: 10px;
+    color: white
+    ;
+}
+
+.scoreTally {
+    font-size: 3rem;
+}
+
+button {
+    border: 2px solid #004225;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin: 20px 0px 10px 0px;
+}
+
+button:hover {
+    background: #004225;
+    box-shadow: 5px 2px 2px white;;
+}
+
+#p1btn {
+    background: red;
+    color: white;
+}
+
+#p2btn {
+    background: blue;
+    color: white;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
